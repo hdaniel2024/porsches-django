@@ -1,0 +1,52 @@
+{% extends "core/base.html" %}
+{% block title %} Formulario {% endblock %}
+{% block content %}
+
+<div class="content">
+    <h1 class="logo">
+        <span>Contactanos</span>
+    </h1>
+    <div class="contact-form">                
+        <form action="" method="" onsubmit="return validarFormulario()">
+            <p>
+                <label for="Nombre">Nombre</label>
+                <input type="text" name="Nombre" id="nombre" placeholder="Ingrese su Nombre y Apellido">
+            </p>
+            <p>
+                <label for="Email">E-mail</label>
+                <input type="email" name="Email" id="email" placeholder="Ingrese su e-mail">
+            </p>
+            <p>
+                <label for="Telefono">Telefono</label>
+                <input type="tel" name="Telefono" id="telefono" placeholder="Ingrese su numero de Telefono">
+            </p>                
+            <p>
+                <label for="Asunto">Asunto:</label>
+                <select id="asunto" name="asunto" ><!-- required -->
+                    <option value="">Seleccione un Asunto...</option>
+                    <option value="comprar">Comprar</option>
+                    <option value="consulta">Consulta General</option>
+                    <option value="sugerencia">Sugerencia</option>
+                    <option value="reclamo">Reclamo</option>
+                </select>
+            </p>
+            <p class="block">
+                <label for="Mensaje">Mensaje</label>
+                <textarea id="mensaje" name="Mensaje" rows="7" placeholder="Ingrese su Mensaje"></textarea>
+            </p>
+            <p>
+                <label for="medioContacto">¿Cómo prefiere ser contactado?</label>
+                <div class="opcionesContacto">
+                    <label for="emailContacto">E-mail</label>
+                    <input type="radio" id="emailContacto" name="medioContacto" value="email" ><!-- checked -->
+                    <label for="telefonoContacto">Teléfono</label>
+                    <input type="radio" id="telefonoContacto" name="medioContacto" value="telefono">                            
+                </div>
+            </p>
+            <button class="custom-button" type="submit">Enviar</button>                   
+        </form>
+    </div>               
+</div>
+{% endblock %}
+
+

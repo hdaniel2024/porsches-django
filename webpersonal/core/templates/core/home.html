@@ -1,0 +1,26 @@
+{% extends "core/base.html" %}
+{% block title %} Porsche {% endblock %}
+{% block content %}
+<header class="header">
+    <div class="slider">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <div class="botones">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+        </div>
+        <div class="contenido">
+            <div class="primerslide"><h1 class="texto slide1">Máquina eterna.</h1></div>
+            <div class="segundaslide"><h1 class="texto slide2">Sportmade.</h1></div>
+            <div class="terceraslide"><h1 class="texto slide3">Elegancia deportiva.</h1></div>
+        </div>
+    </div>
+    <!--INICIO DE DIV CONTEINER-->
+    <div class="section-content conteiner">
+        <h1 class="section-h1">Manten tu Esencia</h1>
+        <p class="textosection">La filosofía de Porsche se centra en la búsqueda incansable de la perfección, no solo en términos de rendimiento y velocidad, sino también en la experiencia del conductor. Cada automóvil Porsche es el resultado de un meticuloso proceso de diseño y fabricación, donde la artesanía se combina con la innovación para crear vehículos que no solo satisfacen, sino que también emocionan a quienes tienen el privilegio de conducirlos.</p>
+    </div>
+</header> 
+{% endblock %}

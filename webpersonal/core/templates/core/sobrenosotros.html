@@ -1,0 +1,50 @@
+{% extends "core/base.html" %}
+{% block title %} Sobre nosotros {% endblock %}
+{% block content %}
+    <section class="sobre-nosotros">
+        <h1>Sobre Nosotros</h1>
+        <br><br><br><br>
+        <p>Descubre la historia y el legado de Porsche</p>
+    </section>
+    <section class="historia">
+        <div class="historia-contenido">
+            <h2>Nuestra Historia</h2>
+            <p>Porsche, una historia de éxitos que se remonta a 1931. Fundada por Ferdinand Porsche.</p>
+            <p>En 1948 Ferry Porsche, el hijo del fundador salió a buscar el automóvil que siempre había soñado, no lo encontró y decidió construirlo. 
+            Así, bajo su dirección se sentaron las bases de lo comenzaría a ser una de las fábricas de automóviles más exclusivas de la historia.</p>
+            <p>El primer deportivo que sale de esta compañía es el Porsche 356, seguido del Porsche 911. Durante cinco décadas Ferry dirigió con gran éxito esta factoría alemana, bajo unos estándares y detalles de diseño y tecnología, aplicables hoy en día a cualquiera de sus modelos, haciéndole como el principal fabricante de vehículos deportivos del mundo.</p>
+            {% load static %}
+            <img src="{% static 'core/fotos-autos/comienzos.jpg' %}" alt="Historia de Porsche">
+        </div>
+    </section>
+    <section class="sueños-logros">
+        <div class="sueños-logros-contenido">
+            <h2>Sueños y Logros</h2>
+            <p>Desde sus humildes comienzos y lo largo de los años, Porsche fue persiguiendo sus sueños y alcanzado logros extraordinarios, siempre manteniendo el compromiso con la calidad y la innovación.</p>
+            <p>Los servicios abarcan desde la idea, el diseño y la construcción de prototipos hasta la producción, pasando por las pruebas, la planificación, la adquisición y la logística. También se incluye en su actividad el desarrollo de funciones, software y otros sistemas relacionados con el mundo de la digitalización. La sostenibilidad, la ecología y la eficiencia son parte de la idiosincrasia de la marca.</p>
+            {% load static %}
+            <img src="{% static 'core/fotos-autos/logros.jpg' %}" alt="Sueños y Logros de Porsche">
+        </div>
+    </section>
+    <section class="satisfaccion-cliente">
+        <div class="satisfaccion-cliente-contenido">
+            <h2>Satisfacción del Cliente</h2>
+            <p>Nuestros clientes son nuestra mayor prioridad. Nos enorgullece recibir testimonios positivos de quienes han experimentado la calidad y el rendimiento de nuestros automóviles Porsche.</p>
+            <div class="testimonios">
+                <div class="testimonio">
+                    {% load static %}
+                    <img src="{% static 'core/fotos-autos/testimonio1.jpg' %}" alt="Testimonio 1">
+                    <p>"Comprar mi Porsche fue la mejor decisión que he tomado. La experiencia de conducirlo es simplemente extraordinaria."</p>
+                    <span>- Daniel Tito</span>
+                </div>
+                <div class="testimonio">
+                    {% load static %}
+                    <img src="{% static 'core/fotos-autos/testimonio2.jpg' %}" alt="testimonio 2">
+                    <p>"Porsche ha superado todas mis expectativas. La calidad y el diseño de sus autos son simplemente impecables."</p>
+                    <span>- Marina Vallejos</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
